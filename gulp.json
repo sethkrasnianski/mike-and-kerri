@@ -1,0 +1,25 @@
+{
+  "dest": "public",
+  "html": {
+    "src": "assets/index.html",
+    "dest": "public"
+  },
+  "scripts": {
+      "project": [
+        "assets/javascripts/**/*.js",
+        "!assets/javascripts/views"
+      ],
+      "vendor": [
+        "bower_components/modernizr/modernizr.js",
+        "bower_components/requirejs/require.js"
+      ],
+      "dest": {
+        "project": "javascripts",
+        "vendor": "assets/javascripts/vendor"
+      }
+    },
+  "styles": {
+      "src": "assets/stylesheets/*.styl",
+      "dest": "public/stylesheets"
+  }
+}
