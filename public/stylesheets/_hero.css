@@ -1,0 +1,25 @@
+#marriage {
+  background: url("../images/hero.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+#marriage h2 {
+  font-size: 65px;
+  margin-top: 17px;
+}
+#marriage button {
+  display: block;
+  margin: 30px auto 160px auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#marriage i {
+  margin-top: 160px;
+  margin-bottom: 20px;
+}
+#names {
+  fill: #fff;
+  position: relative;
+  top: 50px;
+  width: 47%;
+}

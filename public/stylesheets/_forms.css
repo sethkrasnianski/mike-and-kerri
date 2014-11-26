@@ -1,0 +1,19 @@
+.button,
+button {
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: primary-font;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding: 5px 20px;
+}
+.arrow {
+  opacity: 0.5;
+  border: 3px solid #fcfdf7;
+  border-radius: 21px;
+  color: #fcfdf7;
+  cursor: pointer;
+  font-family: 'FontAwesome';
+  padding: 10px;
+}
