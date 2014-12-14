@@ -5,6 +5,29 @@ secondary-font = "minion-pro", serif
 h1
   font-size: 56px
   font-family: fancy-font
+  padding: 0 78px
+  position: relative
+  &:before, &:after
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 100% 100%
+    content: ""
+    display: block
+    height: 27px
+    margin-top: -13.5px
+    top: 50%
+    position: absolute
+    width: 70px
+  &:before
+    background-image: url('../images/icons/h1-filigree-left.png')
+    left: 0
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2)
+      background-image: url('../images/icons-retina/h1-filigree-left.png')
+  &:after
+    background-image: url('../images/icons/h1-filigree-right.png')
+    right: 0
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2)
+      background-image: url('../images/icons-retina/h1-filigree-right.png')
 
 h2, h3, h4, h5, h6
   font-family: primary-font
