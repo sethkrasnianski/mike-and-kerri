@@ -1,6 +1,39 @@
 h1 {
   font-size: 56px;
   font-family: "coquette", fantasy;
+  padding: 0 78px;
+  position: relative;
+}
+h1:before,
+h1:after {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  content: "";
+  display: block;
+  height: 27px;
+  margin-top: -13.5px;
+  top: 50%;
+  position: absolute;
+  width: 70px;
+}
+h1:before {
+  background-image: url("../images/icons/h1-filigree-left.png");
+  left: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
+  h1:before {
+    background-image: url("../images/icons-retina/h1-filigree-left.png");
+  }
+}
+h1:after {
+  background-image: url("../images/icons/h1-filigree-right.png");
+  right: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
+  h1:after {
+    background-image: url("../images/icons-retina/h1-filigree-right.png");
+  }
 }
 h2,
 h3,
