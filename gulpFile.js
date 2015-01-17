@@ -6,7 +6,7 @@ var config      = require('./gulp.json'),
     minCSS      = require('gulp-minify-css'),
     stylus      = require('gulp-stylus'),
     connect     = require('gulp-connect'),
-    aprefix     = require('gulp-autoprefixer'),
+    aprefix     = require('autoprefixer-stylus'),
     rupture     = require ('rupture');
 
 // Set paths
@@ -51,15 +51,12 @@ gulp.task('stylesheets', function () {
   gulp.src(paths.styles.src)
     .pipe(stylus({
       use: [
-        rupture()
+        rupture(),
+        aprefix()
       ]
     }))
     // Production
     // .pipe(minCSS())
-   .pipe(aprefix({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(connect.reload());
 });
