@@ -5,3 +5,17 @@ backface-visibility()
 
 button-border(color)
   border: 3px solid color
+
+image($image, width, height)
+  $image-retina  = "../images/icons-retina/"
+  $image-type    = ".png"
+
+  $image-path-retina  = $image-retina + $image + $image-type
+
+  background-image: url($image-path-retina)
+  background-repeat: no-repeat
+  background-position: center center
+  width: unit(width, px)
+  max-width: 100%
+  height: unit(height, px)
+  background-size: 100%
