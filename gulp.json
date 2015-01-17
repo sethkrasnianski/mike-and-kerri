@@ -11,7 +11,8 @@
       ],
       "vendor": [
         "bower_components/modernizr/modernizr.js",
-        "bower_components/requirejs/require.js"
+        "bower_components/requirejs/require.js",
+        "bower_components/isotope/dist/isotope.pkgd.js"
       ],
       "dest": {
         "project": "javascripts",
