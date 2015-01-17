@@ -2,7 +2,7 @@
   "name": "mike-kerry",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "watch": "gulp"
   },
   "author": "Mike Camera(Design) & Seth Krasnianski(Development)",
   "devDependencies": {
