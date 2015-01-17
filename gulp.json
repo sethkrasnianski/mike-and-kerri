@@ -15,7 +15,7 @@
         "bower_components/isotope/dist/isotope.pkgd.js"
       ],
       "dest": {
-        "project": "javascripts",
+        "project": "public/javascripts",
         "vendor": "assets/javascripts/vendor"
       }
     },
