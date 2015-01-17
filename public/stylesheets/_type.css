@@ -1,8 +1,9 @@
 h1 {
-  font-size: 56px;
+  font-size: 45px;
   font-family: "coquette", fantasy;
   padding: 0 78px;
   position: relative;
+  text-align: center;
 }
 h1:before,
 h1:after {
@@ -45,4 +46,8 @@ h6 {
 p,
 em {
   font-family: "minion-pro", serif;
+}
+p {
+  color: type-blue;
+  line-height: 27px;
 }
