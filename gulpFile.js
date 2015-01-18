@@ -40,7 +40,7 @@ gulp.task('scripts.project', function() {
 gulp.task('scripts.vendor', function() {
   gulp.src(paths.scripts.vendor)
     .pipe(uglify())
-    .pipe(concat('vendor.min.js'))
+    .pipe(concat('vendor.js'))
     .pipe(gulp.dest(paths.scripts.dest.project))
     .pipe(connect.reload());
 });
