@@ -238,6 +238,7 @@ button {
 }
 #story h3 {
   margin: auto;
+  margin-bottom: 25px;
   text-indent: -999999px;
 }
 #story h3.groom {
@@ -306,4 +307,8 @@ img {
 }
 .col-3-4 {
   width: 75%;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
