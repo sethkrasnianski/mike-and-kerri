@@ -3,7 +3,9 @@
   padding: 5% 0;
 }
 #story img {
-  margin: 25px 0;
+  display: block;
+  margin: 25px auto;
+  max-width: 400px;
 }
 #story h1 {
   color: type-blue;
