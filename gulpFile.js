@@ -32,6 +32,7 @@ gulp.task('scripts.project', function() {
   gulp.src(paths.scripts.project)
     // For production
     // .pipe(uglify())
+    .pipe(concat('main.js'))
     .pipe(gulp.dest(paths.scripts.dest.project))
     .pipe(connect.reload());
 });

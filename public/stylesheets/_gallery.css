@@ -1,3 +1,15 @@
 #gallery {
   background: #fff;
+  overflow: hidden;
+  padding: 0;
+  margin: 5% 0;
+}
+#gallery .container {
+  padding: 0 25px;
+}
+#gallery .images {
+  position: relative;
+}
+#gallery .images img {
+  margin: 20px 0;
 }

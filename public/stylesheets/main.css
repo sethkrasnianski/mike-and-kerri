@@ -124,6 +124,7 @@ table {
 h1 {
   font-size: 45px;
   font-family: "coquette", fantasy;
+  margin-bottom: 25px;
   padding: 0 78px;
   position: relative;
   text-align: center;
@@ -223,10 +224,6 @@ button {
   top: 50px;
   width: 47%;
 }
-#story {
-  background: url("../images/bg-tile.jpg");
-  padding: 5% 0;
-}
 #story img {
   display: block;
   margin: 25px auto;
@@ -261,6 +258,18 @@ button {
 }
 #gallery {
   background: #fff;
+  overflow: hidden;
+  padding: 0;
+  margin: 5% 0;
+}
+#gallery .container {
+  padding: 0 25px;
+}
+#gallery .images {
+  position: relative;
+}
+#gallery .images img {
+  margin: 20px 0;
 }
 * {
   box-sizing: border-box;
@@ -311,4 +320,12 @@ img {
 .container {
   max-width: 1200px;
   margin: auto;
+}
+section {
+  padding: 5% 0;
+}
+section#story,
+section#party,
+section#venue {
+  background: url("../images/bg-tile.jpg");
 }
