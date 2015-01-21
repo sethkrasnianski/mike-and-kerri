@@ -1,0 +1,46 @@
+#venue {
+  text-align: center;
+}
+#venue .container {
+  max-width: 1038px;
+}
+#venue .description {
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 800px) {
+  #venue img {
+    margin-bottom: 25px;
+  }
+}
+#venue .right {
+  text-align: left;
+}
+#venue h3,
+#venue .button {
+  margin-top: 50px;
+}
+#venue h2,
+#venue h3,
+#venue small {
+  color: type-blue;
+}
+#venue h2,
+#venue h3 {
+  margin-bottom: 15px;
+}
+#venue h2 {
+  font-size: 28px;
+}
+#venue h3 {
+  font-size: 23px;
+}
+#venue .button {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#venue small {
+  display: block;
+  font-style: italic;
+  margin-top: 30px;
+}

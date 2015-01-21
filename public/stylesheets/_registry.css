@@ -1,0 +1,18 @@
+#registry .container {
+  max-width: 1020px;
+}
+#registry p,
+#registry li {
+  text-align: center;
+}
+#registry li i {
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#registry li i.donovan {
+  margin-top: 40px;
+}
+#registry li i.macys {
+  margin-top: 60px;
+}

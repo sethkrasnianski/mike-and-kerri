@@ -1,8 +1,9 @@
 #gallery
   background: white
-  overflow: hidden
+  overflow-x: hidden
   padding: 0
   margin: 5% 0
+  text-align: center
 
   .container
     padding: 0 25px
@@ -10,3 +11,18 @@
     position: relative
     img
       margin: 20px 0
+      cursor: pointer
+      +below(3)
+        width: 50%!important
+  p
+    font-family: primary-font
+    font-size: 13px
+    img
+      width: 175px
+      top: 9px
+      position: relative
+      margin-left: 3px
+    a
+      text-decoration: none
+      color: type-blue
+      font-weight: 400

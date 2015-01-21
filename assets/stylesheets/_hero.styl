@@ -6,6 +6,9 @@
   h2
     font-size: 65px
     margin-top: 17px
+    +below(3)
+      font-size: 30px
+      margin-top: 38px
 
   button
     display: block
@@ -14,8 +17,14 @@
     padding-right: 40px
 
   i
-    margin-top: 160px
-    margin-bottom: 20px
+    bottom: 20px
+    left: 0
+    margin: auto
+    position: absolute
+    right: 0
+    width: 42px
+    +below(600px)
+      display: none
 
 #names
   fill: white

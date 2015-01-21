@@ -6,43 +6,13 @@ h1 {
   position: relative;
   text-align: center;
 }
-h1:before,
-h1:after {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100% 100%;
-  content: "";
-  display: block;
-  height: 27px;
-  margin-top: -13.5px;
-  top: 50%;
-  position: absolute;
-  width: 70px;
-}
-h1:before {
-  background-image: url("../images/icons/h1-filigree-left.png");
-  left: 0;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
-  h1:before {
-    background-image: url("../images/icons-retina/h1-filigree-left.png");
-  }
-}
-h1:after {
-  background-image: url("../images/icons/h1-filigree-right.png");
-  right: 0;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2) {
-  h1:after {
-    background-image: url("../images/icons-retina/h1-filigree-right.png");
-  }
-}
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
 }
 p,
 em {
@@ -51,4 +21,29 @@ em {
 p {
   color: type-blue;
   line-height: 27px;
+}
+p span,
+p a {
+  font-weight: 600;
+}
+i.filigree {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 27px;
+  width: 70px;
+}
+@media only screen and (max-width: 738px) {
+  i.filigree {
+    display: none;
+  }
+}
+i.filigree.left {
+  background-image: url("../images/icons-retina/h1-filigree-left.png");
+  margin-right: 20px;
+}
+i.filigree.right {
+  background-image: url("../images/icons-retina/h1-filigree-right.png");
+  margin-left: 20px;
 }

@@ -2,13 +2,24 @@
   cursor: pointer
 .button, button
   background: none
-  button-border(white)
   border-radius: 3px
+  button-border(white)
   color: white
   font-family: primary-font
   font-size: 18px
+  font-weight: 600
   letter-spacing: 3px
+  outline: none
   padding: 5px 20px
+  &.blue
+    background: button-blue
+    border-radius: 3px
+    border: none
+    color: white
+    padding-left: 40px
+    padding-right: 40px
+    text-decoration: none
+    text-transform: uppercase
 
 .arrow
   opacity: 0.5
@@ -17,3 +28,90 @@
   color: #fcfdf7
   font-family: 'FontAwesome'
   padding: 10px
+
+input, .select
+  background: white
+  border: 1px solid #c7c7c7
+  margin-bottom: 50px
+  padding: 10px
+
+input, form span, .select
+  color: type-blue
+  font-family: primary-font
+  font-size: 15px
+  font-weight: 600
+
+input
+  width: 100%
+
+select
+  display: none
+
+.select
+  cursor: pointer
+  display: inline-block
+  float: right
+  position: relative
+  vertical-align: top
+  width: 200px
+
+  &:after
+    background: url(../images/select-arrow.png)
+    content: ""
+    height: 12px
+    position: absolute
+    right: 12px
+    top: 12px
+    width: 16px
+
+  .options
+    background: white
+    border: 1px solid #c7c7c7
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3)
+    display: none
+    left: 0px
+    padding: 10px
+    position: absolute
+    top: 35px
+    width: 100%
+    z-index: 123
+
+    li
+      margin: 5px 0
+
+form
+  margin-top: 50px
+
+  .bottom
+    text-align: center
+
+  .button
+    width: 190px
+    padding-bottom: 10px
+    padding-top: 10px
+
+  span
+    margin-right: 25px
+
+fieldset
+  &.left
+    +above(4)
+      padding-right: 5%
+  &.right
+    +above(4)
+      padding-left: 5%
+
+::-webkit-input-placeholder
+  color: type-blue
+
+:-moz-placeholder
+  color: type-blue
+  opacity:  1
+
+::-moz-placeholder
+  color: type-blue
+  opacity:  1
+
+:-ms-input-placeholder
+  color: type-blue
+

@@ -2,14 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <title>Mike &amp; Kerri</title>
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,400italic,300' rel='stylesheet' type='text/css'>
   <script src="//use.typekit.net/naz5elc.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
 </head>
 <body>
+
+<div id="modal">
+  <img src="" alt="" />
+</div>
+
+<header>
+  <div class="container">
+    <a class="link" href="#story">Our Story</a>
+    <a class="link" href="#gallery">Photos</a>
+    <a class="link" href="#party">Wedding Party</a>
+    <a class="home" href="#marriage"><img src="./images/nav-logo.png" alt="Mike & Kerri are getting married"></a>
+    <a class="link" href="#registry">The Venue</a>
+    <a class="link" href="#venue">Our Registry</a>
+    <a class="link" href="#rsvp">RSVP</a>
+  </div>
+</header>
 
 <section id="marriage" class="center-text">
   <div class="container">
@@ -187,19 +204,19 @@
     </svg>
     <h2>5-1-15</h2>
     <button href="#rsvp">RSVP</button>
-    <i class="fa fa-chevron-down arrow"></i>
   </div>
+  <i href="#story" class="fa fa-chevron-down arrow"></i>
 </section>
 
 <section id="story">
   <div class="container">
+    <h1><i class="filigree left"></i>Our Story<i class="filigree right"></i></h1>
     <article class="col-1-3">
       <img src="./images/her.png" alt="Kerry" class="them">
       <h3 class="bride">The Bride</h3>
     </article>
     <article class="col-1-3 story">
-      <h1>Our Story</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde.</p>
+      <p>Mike and Kerri met at...you guessed it...a wedding. When Chris and Heidi Casimiro were married in 2012, Mike and Kerri were seated at the same table during the reception. Here is the thing though, Kerri was at a table full of all of people she didn't know that lived in Coventry and were friends with Chris, very confusing given that Kerri while she knew Chris was friends with Heidi, the bride. About 2 weeks after the lovely Casimiro wedding the truth finally came out that Mike had been out with Chris and Heidi and was told that Heidi would have to sit him with one of her friends so they went through Heidi's friends on Facebook and a special request was made for Kerri. Mike and Kerri talked and danced and ended up going out with everyone after the reception was over. A week later they went on their first date, last February Kerri moved in and they got a dog! and last May, Mike asked Kerri to marry him and she said YES!</p>
     </article>
     <article class="col-1-3">
       <img src="./images/him.png" alt="Mike" class="them">
@@ -211,94 +228,215 @@
 
 <section id="gallery">
   <div class="container">
-    <h1>Photo Gallery</h1>
+    <h1><i class="filigree left"></i>Photo Gallery <i class="filigree right"></i></h1>
     <div class="images">
-      <img class="col-1-4" src="./images/wedding_web_gallery1.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery2.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery3.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery4.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery5.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery6.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery7.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery8.jpg" alt="Mike & Kerry are getting married">
-      <img class="col-1-4" src="./images/wedding_web_gallery9.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery1_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery2_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="vertical" src="./images/gallery/wedding_web_gallery3_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery4_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="vertical" src="./images/gallery/wedding_web_gallery5_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery6_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery8_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery7_thumb.jpg" alt="Mike & Kerry are getting married">
+      <img class="col-1-4" data-orientation="horizontal" src="./images/gallery/wedding_web_gallery9_thumb.jpg" alt="Mike & Kerry are getting married">
     </div>
+    <p>Photos courtesy of <img src="./images/michael-david-photography.png" alt="#">. <a href="http://michaeldavidphotography.pixieset.com/mikeandkerri/">Click here to see more.</a></p>
   </div>
 </section>
 
 <section id="party">
-  <div class="container">
-    <h1>The Wedding Party</h1>
-    <nav class="gender">
-      <button>Bridesmaids</button>
-      <button>Groomsmen</button>
-    </nav>
+  <h1><i class="filigree left"></i>The Wedding Party <i class="filigree right"></i></h1>
+  <nav class="gender">
+    <button class="active" data-party="bridesmaids">Bridesmaids</button>
+    <button data-party="groomsmen">Groomsmen</button>
+    <div class="clearfix"></div>
+  </nav>
 
+  <div id="bridesmaids" class="party active">
     <nav class="person">
-      <button class="control next"></button>
-      <button class="control last"></button>
+      <button class="control arrow fa fa-chevron-left last"></button>
+      <button class="control arrow fa fa-chevron-right next"></button>
     </nav>
 
-    <ul id="bridesmaids" class="people">
+    <ul class="people">
+      <li class="active">
+        <img class="col-1-4" src="./images/party/wedding-party_kelsey.png" alt="Kelsey Evans">
+        <div class="col-3-4 description">
+          <h3>Kelsey Evans</h3>
+          <span>Maid of Honor/Sister of the Bride</span>
+          <p>Kelsey is my sister and without a doubt my best friend. When I found out that I was going to finally get a little sister at almost 10 I was so excited! I just wanted someone to play with...I never thought that we would be best friends and that we would be as close as we are. Despite the 10 year age difference, we are as close as close can be and my life changed for the better the day she came into this world. I can't imagine my life without her...or any else that I could quote every single episode of FRIENDS with and who gets the quote and throws out the next line. Kelsey is one of a kind and I am lucky to have her as my sister and as my best friend.  Sister = best friend for life.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_emily.png" alt="Emily Camera">
+        <div class="col-3-4 description">
+          <h3>Emily Camera</h3>
+          <span>Bridesmaid/Sister of the Groom</span>
+          <p>I love Em! We hit it off the first time we met and what could be better than being friends with your boyfriend's (soon to be husband's) sister?! I am so excited that Em and I will be sisters for real soon! What could be better then having another sister?!  Whether we are hanging at the beach, in Cape May, or in Philly - at games, tailgating, or concerts it is always a good time when Em is around! I am so grateful and so thankful that Em and I hit it off and have become friends and very soon, sisters.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_meredith.png" alt="Meredith Morris">
+        <div class="col-3-4 description">
+          <h3>Meredith Morris</h3>
+          <span>Bridesmaid</span>
+          <p>Fun fact for the Kerri and Meredith Story, Meredith's aunt and uncle were set up by my parents! So while we are fairly certain that we played together as children on a few occasions, but we can't prove it.We actually met up and became close friends in college and have been in each other lives going on road trips, seeing our favorite boy band in concert and cruise adventures ever since (what happens in the car... or backstage...or on the ship...stays in the car or  backstage or on the ship)! Except that beach in St. Maarten, that was not ok and everyone should be warned! :) Meredith has always been a wonderful friend and is the most kind hearted and beautiful person both inside and out, I don't know what I would do without her!</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_adalyn.png" alt="Adalyn">
+        <div class="col-3-4 description">
+          <h3>Adalyn</h3>
+          <span>Flower Girl</span>
+          <p>Ady is the first Great Grandchild on the Evans side of the family and is the daughter of my cousin Meaghan and her husband Geoff. Little Ady is traveling all the way from Seattle just to come to our wedding! Just look at that little face on her, she is just the cutest little dumpling! I am so happy that Ady is able to be a part of my special day!</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+    </ul>
+    <div class="clearfix"></div>
+    <article class="faces">
+      <img src="./images/party/wedding-party_kelsey.png" alt="Kelsey Evans">
+      <img src="./images/party/wedding-party_emily.png" alt="Emily Camera">
+      <img src="./images/party/wedding-party_meredith.png" alt="Meredith Morris">
+      <img src="./images/party/wedding-party_adalyn.png" alt="Adalyn">
+      <div class="clearfix"></div>
+    </article>
+  </div>
+
+  <div id="groomsmen" class="party">
+    <nav class="person">
+      <button class="control arrow fa fa-chevron-left last"></button>
+      <button class="control arrow fa fa-chevron-right next"></button>
+    </nav>
+
+    <ul class="people">
+      <li class="active">
+        <img class="col-1-4" src="./images/party/wedding-party_andy.png" alt="Andy Rogers">
+        <div class="col-3-4 description">
+          <h3>Andy Rogers</h3>
+          <span>Best Man</span>
+          <p>I’ve known Andy since kindergarten. We had a split class and he in first grade with Mrs. Leach. Later on, he trained me when I started working at McDonalds and we’ve remained close ever since. I am lucky to a friend like Andy. He’s someone that I can always count on to spend late night sessions with at Dunkin.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_jesse.png" alt="Jesse Nason">
+        <div class="col-3-4 description">
+          <h3>Jesse Nason</h3>
+          <span>Groomsman</span>
+          <p>What can I say about Jesse? Well, he’s a complicated man, haha. He, and his wife Robin, have always been great friends and I feel like Jesse and I have grown closer over the last few years while I was in Coventry and he was in West Warwick. I’ve always been welcome in their house, and even painted Savannah’s bedroom theme before she was born, and am grateful for that.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_don.png" alt="Don Poirier">
+        <div class="col-3-4 description">
+          <h3>Don Poirier</h3>
+          <span>Groomsman</span>
+          <p>Whether it’s late night closing shifts at McDonalds, going to the beach, or taking Professor’s Delia’s history class, Don and I basically know what the other one is going to say. Mainly because it’s usually a Seinfeld quote.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li>
+        <img class="col-1-4" src="./images/party/wedding-party_pete.png" alt="Peter Camera">
+        <div class="col-3-4 description">
+          <h3>Peter Camera</h3>
+          <span>Groomsman/Brother of the Groom</span>
+          <p>What can I say about Pete? He’s my brother and he’s one of the funniest people I know. We’ve had a certain bond ever since we had to share a bedroom together. If we’re either talking about music, talking about movies, playing guitar, or playing basketball together in the driveway, I can always count on Pete for a laugh.</p>
+        </div>
+        <div class="clearfix"></div>
+      </li>
     </ul>
 
-    <article id="faces">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
+    <article class="faces">
+      <img src="./images/party/wedding-party_andy.png" alt="Andy Rogers">
+      <img src="./images/party/wedding-party_jesse.png" alt="Jesse Nason">
+      <img src="./images/party/wedding-party_don.png" alt="Don Poirier">
+      <img src="./images/party/wedding-party_pete.png" alt="Peter Camera">
+      <div class="clearfix"></div>
     </article>
   </div>
 </section>
 
 <section id="registry">
   <div class="container">
-    <h1>Our Registry</h1>
-    <p></p>
+    <div class="col-1-1">
+      <h1><i class="filigree left"></i>Our Registry<i class="filigree right"></i></h1>
+      <p>Feel free to take a look at our wedding registry, or if you’d rather contribute to our honeymoon, you can make a donation.</p>
+    </div>
 
     <ul>
-      <li></li>
-      <li></li>
+      <li class="col-1-2">
+        <i class="donovan"></i>
+        <a class="button blue" href="http://www.donovantravel.com/celebration_registry/bridalregs/evans_camera.htm">Give</a>
+      </li>
+      <li class="col-1-2">
+        <i class="macys"></i>
+        <a class="button blue" href="http://www1.macys.com/registry/wedding/guest/?registryId=6239276">Shop</a>
+      </li>
     </ul>
+    <div class="clearfix"></div>
   </div>
 </section>
 
 <section id="venue">
   <div class="container">
-    <h1>The Venue</h1>
-    <p></p>
-    <img class="col-1-2" src="" alt="">
-    <aside class="col-1-2">
-      <h2></h2>
-      <p></p>
-      <h3></h3>
-      <p></p>
-      <small></small>
+    <div class="col-1-1">
+      <h1><i class="filigree left"></i>The Venue <i class="filigree right"></i></h1>
+      <p class="description">Overlooking beautiful Narragansett Bay, Quidnessett Country Club is the premier Rhode Island golf course and country club.</p>
+    </div>
+    <img class="col-1-2" src="./images/venue.png" alt="">
+    <aside class="col-1-2 right">
+      <h2>Quidnessett Country Club</h2>
+      <p>
+        950 North Quidnessett Road <br>
+        North Kingstown, RI 02852 <br>
+        Phone: (401) 884-1100 <br>
+      </p>
+      <h3>Friday, May 1, 2015 </h3>
+      <p>
+        Ceremony: 5:30 PM <br>
+        Reception: 6:00 PM <br>
+      </p>
+      <small>Tower Gates Hotel provides a shuttle to and from Quidnessett.</small>
     </aside>
-    <button></button>
+    <div class="clearfix"></div>
+    <a class="button blue" href="https://www.google.com/maps/place/Quidnessett+Country+Club/@41.641081,-71.421409,17z/data=!4m7!1m4!3m3!1s0x89e5b2d1b0f50923:0xc947fad3247e1470!2sQuidnessett+Country+Club!3b1!3m1!1s0x89e5b2d1b0f50923:0xc947fad3247e1470">Get Directions</a>
   </div>
 </section>
 
 <section id="rsvp">
   <div class="container">
-    <h1>RSVP</h1>
-    <p></p>
+    <div class="col-1-1">
+      <h1><i class="filigree left"></i>RSVP <i class="filigree right"></i></h1>
+      <p>We kindly ask that you please RSVP by <span>April 1, 2015.</span></p>
+    </div>
+    <div class="clearfix"></div>
     <form action="">
-      <fieldset class="col-1-2">
-        <input type="">
-        <input type="">
+      <fieldset class="col-1-2 left">
+        <input type="text" placeholder="Your Name*">
+        <input type="text" placeholder="Your Email">
       </fieldset>
-      <fieldset class="col-1-2">
-        <input type="">
+      <fieldset class="col-1-2 right">
+        <input type="text" placeholder="Your Guest Name">
         <div class="attendants">
-          <span></span>
-          <select id="" name="">
-            <option value=""></option>
+          <span>Total number of People Attending: </span>
+          <select name="">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
           </select>
         </div>
       </fieldset>
+      <div class="col-1-1 bottom">
+        <input type="submit" class="button blue" value="submit">
+      </div>
+      <div class="clearfix"></div>
     </form>
+    <p>Contact Kerri at <a href="tel:+1401-575-0748">401-575-0748</a> or <a href="mailto:kerrievans211@gmail.com">kerrievans211@gmail.com</a> or Mike at <a href="tel:+1401-527-6040">401-527-6040</a> or <a href="mailto:macamdesign@gmail.com">macamdesign@gmail.com</a> with any questions.</p>
   </div>
 </section>
 <script src="./javascripts/vendor.js"></script>

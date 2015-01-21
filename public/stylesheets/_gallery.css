@@ -1,8 +1,9 @@
 #gallery {
   background: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   margin: 5% 0;
+  text-align: center;
 }
 #gallery .container {
   padding: 0 25px;
@@ -12,4 +13,25 @@
 }
 #gallery .images img {
   margin: 20px 0;
+  cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+  #gallery .images img {
+    width: 50% !important;
+  }
+}
+#gallery p {
+  font-family: primary-font;
+  font-size: 13px;
+}
+#gallery p img {
+  width: 175px;
+  top: 9px;
+  position: relative;
+  margin-left: 3px;
+}
+#gallery p a {
+  text-decoration: none;
+  color: type-blue;
+  font-weight: 400;
 }

@@ -7,6 +7,12 @@
   font-size: 65px;
   margin-top: 17px;
 }
+@media only screen and (max-width: 800px) {
+  #marriage h2 {
+    font-size: 30px;
+    margin-top: 38px;
+  }
+}
 #marriage button {
   display: block;
   margin: 30px auto 160px auto;
@@ -14,8 +20,17 @@
   padding-right: 40px;
 }
 #marriage i {
-  margin-top: 160px;
-  margin-bottom: 20px;
+  bottom: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 42px;
+}
+@media only screen and (max-width: 600px) {
+  #marriage i {
+    display: none;
+  }
 }
 #names {
   fill: #fff;

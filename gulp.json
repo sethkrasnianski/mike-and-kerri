@@ -6,14 +6,18 @@
   },
   "scripts": {
       "project": [
-        "assets/javascripts/**/*.js",
-        "!assets/javascripts/views"
+        "assets/javascripts/modules/*.js",
+        "assets/javascripts/main.js"
       ],
       "vendor": [
         "bower_components/modernizr/modernizr.js",
         "bower_components/requirejs/require.js",
         "bower_components/jquery/dist/jquery.min.js",
-        "bower_components/isotope/dist/isotope.pkgd.js"
+        "bower_components/isotope/dist/isotope.pkgd.js",
+        "bower_components/wowjs/dist/wow.min.js",
+        "bower_components/slidetastic/src/Slidetastic.js",
+        "bower_components/debounce/jQuery-Debounce",
+        "bower_components/lodash/dist/lodash.min.js"
       ],
       "dest": {
         "project": "public/javascripts",
@@ -21,6 +25,12 @@
       }
     },
   "styles": {
+      "vendor": {
+        "src": [
+          "bower_components/wowjs/css/libs/animate.css"
+        ],
+        "dest": "public/stylesheets"
+      },
       "src": "assets/stylesheets/*.styl",
       "dest": "public/stylesheets"
   }

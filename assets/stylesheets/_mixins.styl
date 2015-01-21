@@ -1,3 +1,5 @@
+@import 'nib/vendor'
+
 backface-visibility()
   -webkit-backface-visibility: hidden
   -moz-backface-visibility:    hidden
@@ -18,4 +20,9 @@ image($image, width, height)
   width: unit(width, px)
   max-width: 100%
   height: unit(height, px)
-  background-size: 100%
+  background-size: 100% 100%
+
+transition($prop, $time, $func)
+  transition-property($prop)
+  transition-duration($time)
+  transition-timing-function($func)

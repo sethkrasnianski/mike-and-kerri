@@ -9,30 +9,10 @@ h1
   padding: 0 78px
   position: relative
   text-align: center
-  &:before, &:after
-    background-repeat: no-repeat
-    background-position: center center
-    background-size: 100% 100%
-    content: ""
-    display: block
-    height: 27px
-    margin-top: -13.5px
-    top: 50%
-    position: absolute
-    width: 70px
-  &:before
-    background-image: url('../images/icons/h1-filigree-left.png')
-    left: 0
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2)
-      background-image: url('../images/icons-retina/h1-filigree-left.png')
-  &:after
-    background-image: url('../images/icons/h1-filigree-right.png')
-    right: 0
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2)
-      background-image: url('../images/icons-retina/h1-filigree-right.png')
 
 h2, h3, h4, h5, h6
   font-family: primary-font
+  font-weight: 600
 
 p, em
   font-family: secondary-font
@@ -40,3 +20,21 @@ p, em
 p
   color: type-blue
   line-height: 27px
+  span, a
+    font-weight: 600
+
+i.filigree
+  background-repeat: no-repeat
+  background-position: center center
+  background-size: 100% 100%
+  display: inline-block
+  height: 27px
+  width: 70px
+  +below(738px)
+    display: none
+  &.left
+    background-image: url('../images/icons-retina/h1-filigree-left.png')
+    margin-right: 20px
+  &.right
+    background-image: url('../images/icons-retina/h1-filigree-right.png')
+    margin-left: 20px

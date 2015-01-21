@@ -7,7 +7,8 @@ var config      = require('./gulp.json'),
     stylus      = require('gulp-stylus'),
     connect     = require('gulp-connect'),
     aprefix     = require('autoprefixer-stylus'),
-    rupture     = require ('rupture');
+    rupture     = require('rupture'),
+    nib         = require('nib');
 
 // Set paths
 var paths = config;
@@ -46,14 +47,15 @@ gulp.task('scripts.vendor', function() {
     .pipe(connect.reload());
 });
 
-// Stylesheets
-gulp.task('stylesheets', function () {
+// Stylesheets Project
+gulp.task('stylesheets.project', function() {
   // Project styles
   gulp.src(paths.styles.src)
     .pipe(stylus({
       use: [
         rupture(),
-        aprefix()
+        aprefix(),
+        nib()
       ]
     }))
     // Production
@@ -62,12 +64,20 @@ gulp.task('stylesheets', function () {
     .pipe(connect.reload());
 });
 
+// Stylesheets Vendor
+gulp.task('stylesheets.vendor', function() {
+  gulp.src(paths.styles.vendor.src)
+    .pipe(concat('vendor.css'))
+    .pipe(minCSS({keepSpecialComments: 0}))
+    .pipe(gulp.dest(paths.styles.vendor.dest))
+});
+
 // Watch
 gulp.task('watch', function () {
   gulp.watch(paths.html.src, ['html']);
   gulp.watch(paths.scripts.project, ['scripts.project']);
   gulp.watch(paths.scripts.vendor, ['scripts.vendor']);
-  gulp.watch(paths.styles.src, ['stylesheets']);
+  gulp.watch(paths.styles.src, ['stylesheets.project']);
 });
 
-gulp.task('default', ['server', 'html', 'stylesheets', 'scripts.project', 'scripts.vendor', 'watch']);
+gulp.task('default', ['server', 'html', 'stylesheets.project', 'stylesheets.vendor', 'scripts.project', 'scripts.vendor', 'watch']);
