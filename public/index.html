@@ -211,14 +211,14 @@
 <section id="story">
   <div class="container">
     <h1><i class="filigree left"></i>Our Story<i class="filigree right"></i></h1>
-    <article class="col-1-3">
+    <article class="col-1-3 left">
       <img src="./images/her.png" alt="Kerry" class="them">
       <h3 class="bride">The Bride</h3>
     </article>
     <article class="col-1-3 story">
       <p>Mike and Kerri met at...you guessed it...a wedding. When Chris and Heidi Casimiro were married in 2012, Mike and Kerri were seated at the same table during the reception. Here is the thing though, Kerri was at a table full of all of people she didn't know that lived in Coventry and were friends with Chris, very confusing given that Kerri while she knew Chris was friends with Heidi, the bride. About 2 weeks after the lovely Casimiro wedding the truth finally came out that Mike had been out with Chris and Heidi and was told that Heidi would have to sit him with one of her friends so they went through Heidi's friends on Facebook and a special request was made for Kerri. Mike and Kerri talked and danced and ended up going out with everyone after the reception was over. A week later they went on their first date, last February Kerri moved in and they got a dog! and last May, Mike asked Kerri to marry him and she said YES!</p>
     </article>
-    <article class="col-1-3">
+    <article class="col-1-3 right">
       <img src="./images/him.png" alt="Mike" class="them">
       <h3 class="groom">The Groom</h3>
     </article>
@@ -415,23 +415,25 @@
       <p>We kindly ask that you please RSVP by <span>April 1, 2015.</span></p>
     </div>
     <div class="clearfix"></div>
-    <form action="">
-      <fieldset class="col-1-2 left">
-        <input type="text" placeholder="Your Name*">
-        <input type="text" placeholder="Your Email">
+    <form action="email.php">
+      <div class="response"></div>
+      <fieldset class="col-1-2 form-area left">
+        <input type="text" name="name" placeholder="Your Name*">
+        <input type="text" name="email"placeholder="Your Email">
       </fieldset>
-      <fieldset class="col-1-2 right">
-        <input type="text" placeholder="Your Guest Name">
+      <fieldset class="col-1-2 form-area right">
+        <input type="text" name="guest" placeholder="Your Guest's Name">
         <div class="attendants">
           <span>Total number of People Attending: </span>
-          <select name="">
+          <select name="count">
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
         </div>
       </fieldset>
-      <div class="col-1-1 bottom">
+      <div class="col-1-1 form-area bottom">
         <input type="submit" class="button blue" value="submit">
       </div>
       <div class="clearfix"></div>

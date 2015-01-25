@@ -1,4 +1,19 @@
 #story
+  article
+    transition(all, 0.3s, ease-in)
+    &.left, &.right
+      opacity: 0
+    &.left
+      left: -20%
+    &.right
+      right: -20%
+    &.inview
+      opacity: 1
+      &.left
+        left: 0
+      &.right
+        right: 0
+
   img
     display: block
     margin: 25px auto
@@ -15,3 +30,8 @@
       image("ribbon-groom", 298, 78)
     &.bride
       image("ribbon-bride", 298, 78)
+
+  .story
+    background: url('../images/icons-retina/anchor.png') center
+    background-size: 331px 473px
+    background-repeat: no-repeat

@@ -14,3 +14,18 @@
 #rsvp .attendants span {
   line-height: 35px;
 }
+#rsvp .response {
+  color: type-blue;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+#rsvp .response.success {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 37px;
+  margin-bottom: 50px;
+}
+#rsvp .response.failure {
+  color: #f68e69;
+  margin-bottom: 20px;
+}

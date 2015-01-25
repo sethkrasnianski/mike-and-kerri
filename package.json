@@ -17,6 +17,7 @@
     "rupture": "0.4.0"
   },
   "dependencies": {
+    "gulp-watch": "^3.0.0",
     "nib": "^1.1.0"
   }
 }

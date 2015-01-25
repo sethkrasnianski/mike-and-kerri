@@ -6,6 +6,7 @@ var config      = require('./gulp.json'),
     minCSS      = require('gulp-minify-css'),
     stylus      = require('gulp-stylus'),
     connect     = require('gulp-connect'),
+    watch       = require('gulp-watch'),
     aprefix     = require('autoprefixer-stylus'),
     rupture     = require('rupture'),
     nib         = require('nib');
@@ -64,20 +65,18 @@ gulp.task('stylesheets.project', function() {
     .pipe(connect.reload());
 });
 
-// Stylesheets Vendor
-gulp.task('stylesheets.vendor', function() {
-  gulp.src(paths.styles.vendor.src)
-    .pipe(concat('vendor.css'))
-    .pipe(minCSS({keepSpecialComments: 0}))
-    .pipe(gulp.dest(paths.styles.vendor.dest))
-});
-
 // Watch
 gulp.task('watch', function () {
   gulp.watch(paths.html.src, ['html']);
-  gulp.watch(paths.scripts.project, ['scripts.project']);
-  gulp.watch(paths.scripts.vendor, ['scripts.vendor']);
-  gulp.watch(paths.styles.src, ['stylesheets.project']);
+  watch(paths.scripts.project, function() {
+    gulp.start('scripts.project');
+  });
+  watch(paths.scripts.vendor, function() {
+    gulp.start('scripts.vendor');
+  });
+  watch(paths.styles.src, function() {
+    gulp.start('stylesheets.project');
+  });
 });
 
-gulp.task('default', ['server', 'html', 'stylesheets.project', 'stylesheets.vendor', 'scripts.project', 'scripts.vendor', 'watch']);
+gulp.task('default', ['server', 'html', 'stylesheets.project', 'scripts.project', 'scripts.vendor', 'watch']);

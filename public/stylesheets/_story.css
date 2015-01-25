@@ -1,3 +1,22 @@
+#story article.left,
+#story article.right {
+  opacity: 0;
+}
+#story article.left {
+  left: -20%;
+}
+#story article.right {
+  right: -20%;
+}
+#story article.inview {
+  opacity: 1;
+}
+#story article.inview.left {
+  left: 0;
+}
+#story article.inview.right {
+  right: 0;
+}
 #story img {
   display: block;
   margin: 25px auto;
@@ -11,4 +30,9 @@
   margin: auto;
   margin-bottom: 25px;
   text-indent: -999999px;
+}
+#story .story {
+  background: url("../images/icons-retina/anchor.png") center;
+  background-size: 331px 473px;
+  background-repeat: no-repeat;
 }

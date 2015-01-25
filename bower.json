@@ -15,8 +15,8 @@
   "dependencies": {
     "isotope": "2.1.0",
     "jquery": "2.1.3",
-    "wowjs": "1.0.3",
     "slidetastic": "git@github.com:sethkrasnianski/slidetastic.git",
-    "lodash": "2.4.1"
+    "lodash": "2.4.1",
+    "modernizr": "~2.8.3"
   }
 }
