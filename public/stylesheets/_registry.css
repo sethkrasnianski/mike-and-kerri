@@ -5,6 +5,12 @@
 #registry li {
   text-align: center;
 }
+#registry ul {
+  text-align: center;
+}
+#registry li {
+  float: none;
+}
 #registry li i {
   display: block;
   margin: auto;

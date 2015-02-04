@@ -409,6 +409,7 @@ form span {
   background: url("../images/icons-retina/anchor.png") center;
   background-size: 331px 473px;
   background-repeat: no-repeat;
+  text-align: center;
 }
 #gallery {
   background: #fff;
@@ -580,6 +581,12 @@ form span {
 #registry p,
 #registry li {
   text-align: center;
+}
+#registry ul {
+  text-align: center;
+}
+#registry li {
+  float: none;
 }
 #registry li i {
   display: block;
