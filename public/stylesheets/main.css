@@ -586,6 +586,7 @@ form span {
   text-align: center;
 }
 #registry li {
+  display: inline-block;
   float: none;
 }
 #registry li i {
